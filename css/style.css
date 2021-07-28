@@ -1,12 +1,16 @@
 body {
-  font-family: 'Roboto', sans-serif;
+  font-family: "Roboto", sans-serif;
   font-size: 14px;
-  color: #0A143A; /* цвет текста на сайте */
+  color: #0a143a; /* цвет текста на сайте */
+}
+.container {
+  max-width: 1146px; /* максимальная ширина */
+  margin: auto; /* автоматическое выравнивание по середине */
 }
 .header {
   padding-top: 30px;
-  max-width: 1146px; /* максимальная ширина */
-  margin: auto; /* автоматическое выравнивание по середине */
+  padding-bottom: 30px;
+  margin-bottom: 12px;
 }
 .navbar {
   display: flex; /* делаем гибкий блок */
@@ -42,22 +46,22 @@ body {
   margin-right: 25px;
 }
 .button-primary {
-  padding: 10px 15px;  /* внутренние отступы у кнопки */
-  background: #256EEB; /* фон */
-  color: #fff;  /* цвет текста */
-  border-radius: 5px;  /* скругление углов */
+  padding: 10px 15px; /* внутренние отступы у кнопки */
+  background: #256eeb; /* фон */
+  color: #fff; /* цвет текста */
+  border-radius: 5px; /* скругление углов */
   cursor: pointer;
 }
 .search-panel {
   height: 50px;
-  background: #256EEB;
+  background: #256eeb;
   border-radius: 5px;
   display: flex;
   padding: 3px;
 }
 .search-input {
   flex-grow: 1; /* растянуть на все свободное пространство */
-  background: #FFFFFF;
+  background: #ffffff;
   border-radius: 5px;
   border: none;
   padding-left: 22px;
@@ -66,7 +70,7 @@ body {
 .search-button {
   padding-left: 20px;
   padding-right: 17px;
-  background: #256EEB;
+  background: #256eeb;
   color: #fff;
   border: none;
   display: flex;
@@ -74,4 +78,100 @@ body {
 }
 .search-icon {
   margin-right: 5px;
+}
+.page-content {
+  display: grid;
+  grid-template-columns: 9fr 3fr;
+  grid-column-gap: 30px;
+}
+.card-image {
+  border-radius: 10px;
+  width: 264px;
+  height: 178px;
+  object-fit: cover;
+}
+.cards {
+  display: flex;
+  flex-wrap: wrap;
+}
+.card {
+  margin-bottom: 20px;
+}
+.card:not(:nth-child(3n)) {
+  margin-right: 20px;
+}
+.card-title {
+  font-size: 16px;
+  line-height: 19px;
+  color: #256eeb;
+  margin-top: 12px;
+  margin-bottom: 5px;
+}
+.card-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+}
+.like {
+  background-color: white;
+  border: none;
+  cursor: pointer;
+  margin-left: 15px;
+}
+.card-price {
+  display: block;
+  font-size: 16px;
+  line-height: 19px;
+  margin-bottom: 10px;
+}
+.card-text {
+  font-size: 14px;
+  line-height: 16px;
+  color: #c4c4c4;
+  margin-bottom: 4px;
+  margin-top: 0;
+}
+.card-link {
+  text-decoration: none;
+}
+.sidebar .page-title {
+  font-size: 18px;
+  line-height: 21px;
+}
+.service {
+  margin-bottom: 25px;
+}
+.service-title {
+  font-weight: bold;
+  font-size: 14px;
+  line-height: 16px;
+  margin-top: 7px;
+  margin-bottom: 5px;
+}
+.service-text {
+  font-size: 14px;
+  line-height: 16px;
+  max-width: 217px;
+  margin: 0;
+}
+.footer-text {
+  font-size: 14px;
+  line-height: 16px;
+  color: #c4c4c4;
+  margin-bottom: 5px;
+  display: inline-block;
+}
+.footer-menu {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+  margin-bottom: 16px;
+}
+.footer-link {
+  font-size: 12px;
+  line-height: 14px;
+  color: #000000;
+  text-decoration: none;
+  display: inline-block;
+  margin-bottom: 5px;
 }
